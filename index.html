@@ -1527,15 +1527,7 @@
             <div class="contact-icon">☎</div>
             <div class="contact-copy">
               <small>Phone</small>
-              <strong>0439 354 563</strong>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">✉</div>
-            <div class="contact-copy">
-              <small>Email</small>
-              <strong><a href="mailto:info@ddminidiggers.com.au">info@ddminidiggers.com.au</a></strong>
+              <strong><a href="tel:0439354563">0439 354 563</a></strong>
             </div>
           </div>
 
@@ -1561,7 +1553,7 @@
         <h3>Send Us A Message</h3>
         <p>We'll get back to you within 24 hours.</p>
 
-        <form>
+        <form id="quote-form" action="javascript:void(0)">
           <div class="form-grid">
             <div class="form-group">
               <label>First Name</label>
@@ -1598,6 +1590,7 @@
             </div>
           </div>
           <button class="btn btn-primary submit-btn" type="submit">Submit Quote Request →</button>
+          <p style="margin-top: 16px; color: rgba(255,255,255,.6); font-size: 15px;">Or call <a href="tel:0439354563" style="color: var(--orange); font-weight: 700;">0439 354 563</a> for a quick quote.</p>
         </form>
       </div>
     </div>
@@ -1611,5 +1604,23 @@
   </footer>
 
   <a href="tel:0439354563" class="btn btn-primary float-call">Call Now</a>
+
+  <script>
+    document.getElementById('quote-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var inputs = this.querySelectorAll('input[type="text"]');
+      var first = inputs[0] ? inputs[0].value : '';
+      var last = inputs[1] ? inputs[1].value : '';
+      var name = (first + (last ? ' ' + last : '')).trim() || 'Quote request';
+      var phoneEl = this.querySelector('input[type="tel"]');
+      var phone = phoneEl ? phoneEl.value : '';
+      var sel = this.querySelector('select');
+      var service = sel && sel.selectedIndex > 0 ? sel.options[sel.selectedIndex].text : '';
+      var area = this.querySelector('textarea');
+      var details = area ? area.value : '';
+      var msg = 'Hi, I\'d like a quote. Name: ' + name + (phone ? ' Phone: ' + phone : '') + (service ? ' Service: ' + service : '') + (details ? ' Details: ' + details : '');
+      window.location.href = 'sms:0439354563?body=' + encodeURIComponent(msg);
+    });
+  </script>
 </body>
 </html>
