@@ -954,6 +954,7 @@
 
       .hero {
         min-height: auto;
+        padding-bottom: 0;
       }
 
       .hero::after {
@@ -961,16 +962,15 @@
       }
 
       .hero-inner {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 22px;
-        padding: 28px 0 24px;
-        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 24px 0 0;
       }
 
       .hero-copy {
-        padding-right: 0;
         order: 1;
+        padding-right: 0;
       }
 
       .hero-badge {
@@ -1004,8 +1004,8 @@
         grid-template-columns: 1fr;
         gap: 10px;
         margin-top: 16px;
-        padding-bottom: 14px;
         margin-bottom: 10px;
+        padding-bottom: 10px;
       }
 
       .hero-actions .btn {
@@ -1034,26 +1034,31 @@
         letter-spacing: 0.08em;
       }
 
-      .hero-art {
+      .hero-art,
+      .hero-image {
         order: 2;
-        padding-left: 0;
-        min-height: auto;
+        display: flex;
         justify-content: center;
-        margin-top: 8px;
+        align-items: flex-end;
+        min-height: auto;
+        margin-top: 0;
+        padding: 0;
       }
 
       .hero-art img,
       .hero-image img {
         width: 100%;
-        max-width: 360px;
-        transform: none;
-        margin: 0 auto;
+        max-width: 430px;
+        transform: translateY(0);
+        margin: 0 auto -8px;
+        display: block;
       }
 
-      .hero-art::before {
-        width: 260px;
-        height: 260px;
-        top: 50%;
+      .hero-art::before,
+      .hero-image::before {
+        width: 280px;
+        height: 280px;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         filter: blur(45px);
@@ -1262,8 +1267,7 @@
       }
 
       .hero-stats {
-        grid-template-columns: 1fr;
-        gap: 14px;
+        grid-template-columns: repeat(3, 1fr);
       }
 
       .hero-stat strong {
@@ -1272,7 +1276,9 @@
 
       .hero-art img,
       .hero-image img {
-        max-width: 300px;
+        max-width: 460px;
+        width: 115%;
+        margin: -10px auto -10px;
       }
 
       .section-title {
