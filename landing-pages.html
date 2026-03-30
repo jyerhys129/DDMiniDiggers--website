@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D.D Mini Diggers | Mini Digger Hire & Earthmoving Across Melbourne's East</title>
+  <meta name="description" content="D.D Mini Diggers services Wantirna, Eltham, Yarra Valley, Pakenham and Melbourne's Eastern Suburbs. Tight access earthmoving, trenching, landscaping and post holes. Get a free quote today." />
+  <link rel="canonical" href="https://ddminidiggers.com.au/landing-pages.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #081a33;
+      --navy-2: #10284c;
+      --orange: #f36b08;
+      --orange-2: #ff7f1f;
+      --white: #ffffff;
+      --off-white: #f6f7fb;
+      --text: #16253a;
+      --muted: #7d8ba1;
+      --border: #e8edf4;
+      --shadow: 0 20px 60px rgba(8, 26, 51, 0.08);
+      --radius: 18px;
+      --max: 1320px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Barlow', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button, input, select, textarea { font: inherit; }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section { padding: 80px 0; }
+
+    .section-tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(38px, 5vw, 60px);
+      line-height: 0.95;
+      letter-spacing: -.02em;
+      text-transform: uppercase;
+      color: var(--navy);
+      max-width: 820px;
+    }
+
+    .section-title span { color: var(--orange); }
+
+    .section-sub {
+      margin-top: 18px;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      border-radius: 8px;
+      padding: 16px 30px;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: .25s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #f36b08, #ff7f1f);
+      color: #fff;
+      box-shadow: 0 25px 50px rgba(243,107,8,.4);
+    }
+
+    .btn-primary:hover {
+      background: var(--orange-2);
+      box-shadow: 0 12px 35px rgba(255,122,0,0.4);
+    }
+
+    .btn-dark {
+      background: rgba(255,255,255,.08);
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,.16);
+    }
+
+    .btn-dark:hover { background: rgba(255,255,255,.12); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 2px solid var(--border);
+    }
+
+    .btn-outline:hover { border-color: var(--orange); color: var(--orange); }
+
+    .btn-nav { padding: 12px 22px; font-size: 14px; border-radius: 7px; }
+
+    /* ── NAV ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--navy);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .logo span { color: var(--orange); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #6f7f96;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: .2s ease;
+    }
+
+    .nav-links a:hover { color: var(--orange); }
+
+    .nav-right { display: flex; align-items: center; gap: 14px; }
+
+    .nav-phone { background: var(--navy); color: var(--white); }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      background: var(--navy);
+      padding: 80px 0 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: 44%;
+      background: var(--navy-2);
+      clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
+      z-index: 0;
+    }
+
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-hero .section-tag { color: #ffb27a; }
+
+    .page-hero .section-title {
+      color: var(--white);
+      max-width: 900px;
+    }
+
+    .page-hero .section-title span { color: var(--orange); }
+
+    .page-hero .section-sub { color: rgba(255,255,255,.65); }
+
+    .page-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    /* ── TRUST STRIP ── */
+    .trust-bar {
+      background: var(--off-white);
+      border-top: 3px solid var(--orange);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .trust-item {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 18px;
+      border-right: 1px solid var(--border);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    .trust-item:last-child { border-right: 0; }
+    .trust-item .dot { color: var(--orange); font-size: 22px; line-height: 1; }
+
+    /* ── AREAS GRID ── */
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 54px;
+    }
+
+    .area-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: .25s ease;
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .area-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 60px rgba(8,26,51,.12);
+      border-color: var(--orange);
+    }
+
+    .area-card-top {
+      background: var(--navy);
+      padding: 32px 28px 26px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .area-card-top::before {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 160px;
+      height: 160px;
+      background: rgba(243,107,8,.08);
+      border-radius: 50%;
+    }
+
+    .area-number {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 80px;
+      font-weight: 900;
+      line-height: 1;
+      color: rgba(255,255,255,.06);
+      position: absolute;
+      top: 10px;
+      right: 18px;
+    }
+
+    .area-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+
+    .area-card-top h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      color: var(--white);
+      letter-spacing: -.01em;
+    }
+
+    .area-card-body {
+      padding: 26px 28px 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .area-card-body p {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.75;
+      flex: 1;
+    }
+
+    .area-services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .area-tag {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .area-cta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .area-cta .btn {
+      flex: 1;
+      min-width: 120px;
+      font-size: 13px;
+      padding: 13px 16px;
+    }
+
+    .btn-navy {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .btn-navy:hover { background: var(--navy-2); }
+
+    /* ── LOCATION LANDING SECTIONS ── */
+    .location-section {
+      padding: 90px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .location-section:nth-child(even) {
+      background: var(--off-white);
+    }
+
+    .location-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .location-inner.reverse { direction: rtl; }
+    .location-inner.reverse > * { direction: ltr; }
+
+    .location-copy { display: flex; flex-direction: column; gap: 22px; }
+
+    .location-copy h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(36px, 4vw, 54px);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -.02em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    .location-copy h2 span { color: var(--orange); }
+
+    .location-copy p {
+      color: var(--muted);
+      font-size: 19px;
+      line-height: 1.75;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 12px;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      list-style: none;
+    }
+
+    .checklist li::before {
+      content: "✔";
+      color: var(--orange);
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .location-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; }
+
+    .location-panel {
+      background: var(--navy);
+      border-radius: var(--radius);
+      padding: 44px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .location-panel h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .location-panel h3 span { color: var(--orange); }
+
+    .location-panel p {
+      color: rgba(255,255,255,.6);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 22px;
+    }
+
+    .stat-item strong {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .stat-item strong span { color: var(--orange); }
+
+    .stat-item small {
+      display: block;
+      margin-top: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.38);
+    }
+
+    .panel-cta { margin-top: 4px; }
+    .panel-cta .btn { width: 100%; justify-content: center; }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: var(--navy);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .cta-banner h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 900;
+      line-height: 0.95;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 18px;
+    }
+
+    .cta-banner h2 span { color: var(--orange); }
+
+    .cta-banner p {
+      color: rgba(255,255,255,.6);
+      font-size: 20px;
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    .cta-banner-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,.45);
+      padding: 30px 0;
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+
+    .footer-logo span { color: var(--orange); }
+
+    .float-call {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 110;
+      min-width: 170px;
+      border-radius: 999px;
+      padding-inline: 24px;
+      box-shadow: 0 10px 30px rgba(255,122,0,0.35);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1100px) {
+      .areas-grid { grid-template-columns: repeat(2, 1fr); }
+      .location-inner { grid-template-columns: 1fr; gap: 40px; }
+      .location-inner.reverse { direction: ltr; }
+      .page-hero::after { display: none; }
+    }
+
+    @media (max-width: 900px) {
+      .container { width: calc(100% - 24px); }
+      .nav { min-height: 72px; }
+      .logo { font-size: 18px; }
+      .nav-links { display: none; }
+      .nav-right { gap: 8px; }
+      .btn-nav { padding: 10px 14px; font-size: 11px; }
+      .trust-grid { grid-template-columns: repeat(2, 1fr); }
+      .trust-item:nth-child(2n) { border-right: 0; }
+      .trust-item { border-bottom: 1px solid var(--border); }
+      .areas-grid { grid-template-columns: 1fr; }
+      .section { padding: 60px 0; }
+      .location-panel { padding: 28px 22px; }
+      .location-panel h3 { font-size: 34px; }
+      .page-hero { padding: 52px 0 44px; }
+      .footer-inner { flex-direction: column; text-align: center; gap: 8px; }
+      .float-call { right: 12px; bottom: 12px; font-size: 11px; min-width: 0; }
+    }
+
+    @media (max-width: 520px) {
+      .logo { font-size: 16px; }
+      .nav-right .nav-phone { display: none; }
+      .section-title { font-size: 32px; }
+      .page-hero-actions { flex-direction: column; }
+      .page-hero-actions .btn { width: 100%; }
+      .location-cta { flex-direction: column; }
+      .location-cta .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">D.D <span>Mini</span> Diggers</a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="index.html#gallery">Recent Jobs</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:0439354563" class="btn btn-dark btn-nav nav-phone">0439 354 563</a>
+        <a href="index.html#contact" class="btn btn-primary btn-nav">GET YOUR FREE QUOTE</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="section-tag">Service Areas</div>
+      <h1 class="section-title">Mini Digger Hire &amp; <span>Earthmoving</span><br>Across Melbourne's East</h1>
+      <p class="section-sub">D.D Mini Diggers operates across Wantirna, Eltham, Yarra Valley, Pakenham, and Melbourne's Eastern Suburbs. Tight access specialists with 30+ years experience — delivering trenching, landscaping, post holes, driveways and site clean ups done right.</p>
+      <div class="page-hero-actions">
+        <a href="index.html#contact" class="btn btn-primary">Get Your Free Quote</a>
+        <a href="tel:0439354563" class="btn btn-dark">0439 354 563</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item"><span class="dot">•</span> Licensed &amp; Insured</div>
+      <div class="trust-item"><span class="dot">•</span> Fast Response</div>
+      <div class="trust-item"><span class="dot">•</span> Melbourne &amp; Surrounds</div>
+      <div class="trust-item"><span class="dot">•</span> Free Quotes</div>
+      <div class="trust-item"><span class="dot">•</span> Tight Access Specialists</div>
+    </div>
+  </section>
+
+  <!-- AREAS OVERVIEW GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="section-tag">Where We Work</div>
+      <h2 class="section-title">Our <span>Service Areas</span></h2>
+      <p class="section-sub">We cover Melbourne's east from the inner suburbs out to the Yarra Valley and beyond. If you're unsure whether we cover your area, just call — we'll let you know straight away.</p>
+
+      <div class="areas-grid">
+
+        <div class="area-card">
+          <div class="area-card-top">
+            <div class="area-number">01</div>
+            <div class="area-label">Eastern Suburbs</div>
+            <h2>Wantirna &amp; Knox</h2>
+          </div>
+          <div class="area-card-body">
+            <p>Local earthmoving and mini digger hire in Wantirna, Wantirna South, Bayswater and the broader Knox area. Tight access jobs done right.</p>
+            <div class="area-services">
+              <span class="area-tag">Trenching</span>
+              <span class="area-tag">Landscaping</span>
+              <span class="area-tag">Post Holes</span>
+              <span class="area-tag">Driveways</span>
+            </div>
+            <div class="area-cta">
+              <a href="index.html#contact" class="btn btn-primary">Get a Quote</a>
+              <a href="tel:0439354563" class="btn btn-navy">Call Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="area-card">
+          <div class="area-card-top">
+            <div class="area-number">02</div>
+            <div class="area-label">North-East Melbourne</div>
+            <h2>Eltham &amp; Diamond Valley</h2>
+          </div>
+          <div class="area-card-body">
+            <p>Mini digger and earthmoving services in Eltham, Greensborough, Diamond Creek and surrounding areas. No job too tight or too steep.</p>
+            <div class="area-services">
+              <span class="area-tag">Retaining Walls</span>
+              <span class="area-tag">Landscaping</span>
+              <span class="area-tag">Post Holes</span>
+              <span class="area-tag">Site Clean Up</span>
+            </div>
+            <div class="area-cta">
+              <a href="index.html#contact" class="btn btn-primary">Get a Quote</a>
+              <a href="tel:0439354563" class="btn btn-navy">Call Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="area-card">
+          <div class="area-card-top">
+            <div class="area-number">03</div>
+            <div class="area-label">Outer East</div>
+            <h2>Yarra Valley</h2>
+          </div>
+          <div class="area-card-body">
+            <p>Earthmoving and excavation in Lilydale, Yarra Glen, Healesville and the Yarra Valley. Acreage and rural jobs welcome.</p>
+            <div class="area-services">
+              <span class="area-tag">Trenching</span>
+              <span class="area-tag">Driveways</span>
+              <span class="area-tag">Spoil Removal</span>
+              <span class="area-tag">Landscaping</span>
+            </div>
+            <div class="area-cta">
+              <a href="index.html#contact" class="btn btn-primary">Get a Quote</a>
+              <a href="tel:0439354563" class="btn btn-navy">Call Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="area-card">
+          <div class="area-card-top">
+            <div class="area-number">04</div>
+            <div class="area-label">South-East Melbourne</div>
+            <h2>Pakenham &amp; Cardinia</h2>
+          </div>
+          <div class="area-card-body">
+            <p>Mini digger hire and earthmoving for Pakenham, Berwick, Officer and the Cardinia growth corridor. New estates and established homes.</p>
+            <div class="area-services">
+              <span class="area-tag">Post Holes</span>
+              <span class="area-tag">Driveways</span>
+              <span class="area-tag">Trenching</span>
+              <span class="area-tag">Site Prep</span>
+            </div>
+            <div class="area-cta">
+              <a href="index.html#contact" class="btn btn-primary">Get a Quote</a>
+              <a href="tel:0439354563" class="btn btn-navy">Call Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="area-card">
+          <div class="area-card-top">
+            <div class="area-number">05</div>
+            <div class="area-label">Eastern Suburbs</div>
+            <h2>Ringwood to Croydon</h2>
+          </div>
+          <div class="area-card-body">
+            <p>Excavation, trenching and landscaping prep across Ringwood, Croydon, Mooroolbark and Kilsyth. Residential and builder jobs taken on.</p>
+            <div class="area-services">
+              <span class="area-tag">Landscaping</span>
+              <span class="area-tag">Retaining Walls</span>
+              <span class="area-tag">Trenching</span>
+              <span class="area-tag">Post Holes</span>
+            </div>
+            <div class="area-cta">
+              <a href="index.html#contact" class="btn btn-primary">Get a Quote</a>
+              <a href="tel:0439354563" class="btn btn-navy">Call Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="area-card">
+          <div class="area-card-top">
+            <div class="area-number">06</div>
+            <div class="area-label">Broader Coverage</div>
+            <h2>Not Sure? Just Ask</h2>
+          </div>
+          <div class="area-card-body">
+            <p>Don't see your suburb listed? We service a wide range of areas across Melbourne's east. Give us a call and we'll confirm coverage on the spot.</p>
+            <div class="area-services">
+              <span class="area-tag">All Services</span>
+              <span class="area-tag">Free Quote</span>
+              <span class="area-tag">Fast Response</span>
+            </div>
+            <div class="area-cta">
+              <a href="index.html#contact" class="btn btn-primary">Get a Quote</a>
+              <a href="tel:0439354563" class="btn btn-navy">0439 354 563</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WANTIRNA LOCATION SECTION -->
+  <section class="location-section" id="wantirna">
+    <div class="container location-inner">
+      <div class="location-copy">
+        <div>
+          <div class="section-tag">Wantirna &amp; Knox</div>
+          <h2>Mini Digger Hire<br><span>Wantirna</span></h2>
+        </div>
+        <p>Looking for a mini digger in Wantirna? D.D Mini Diggers is your local tight-access earthmoving specialist. We work in residential backyards, narrow side entries and established gardens — where the big machines simply can't go.</p>
+        <ul class="checklist">
+          <li>Stormwater and service trenching in tight yards</li>
+          <li>Landscaping preparation and ground reshaping</li>
+          <li>Post holes for fences, pergolas and decks</li>
+          <li>Driveway excavation and base preparation</li>
+          <li>Spoil removal and site clean up</li>
+        </ul>
+        <div class="location-cta">
+          <a href="index.html#contact" class="btn btn-primary">Get a Free Quote</a>
+          <a href="tel:0439354563" class="btn btn-outline">0439 354 563</a>
+        </div>
+      </div>
+      <div class="location-panel">
+        <h3>Serving <span>Wantirna</span> &amp; surrounds</h3>
+        <p>We cover Wantirna, Wantirna South, Bayswater, Boronia and the broader Knox corridor. Fast quotes, clean work and no mess left behind.</p>
+        <div class="stat-row">
+          <div class="stat-item">
+            <strong>30<span>+</span></strong>
+            <small>Years Experience</small>
+          </div>
+          <div class="stat-item">
+            <strong>5<span>★</span></strong>
+            <small>Rated Local Business</small>
+          </div>
+        </div>
+        <div class="panel-cta">
+          <a href="index.html#contact" class="btn btn-primary">Request a Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELTHAM LOCATION SECTION -->
+  <section class="location-section" id="eltham">
+    <div class="container location-inner reverse">
+      <div class="location-copy">
+        <div>
+          <div class="section-tag">North-East Melbourne</div>
+          <h2>Mini Digger Hire<br><span>Eltham</span></h2>
+        </div>
+        <p>Eltham's hilly, tree-lined blocks often require specialised equipment and experience. D.D Mini Diggers handles steep access, tight lanes and challenging soil types with ease — delivering clean results every time.</p>
+        <ul class="checklist">
+          <li>Retaining wall excavation on sloped blocks</li>
+          <li>Trenching for drainage and services</li>
+          <li>Landscaping earthworks on difficult terrain</li>
+          <li>Post holes through rock and clay</li>
+          <li>Site clean up and spoil removal</li>
+        </ul>
+        <div class="location-cta">
+          <a href="index.html#contact" class="btn btn-primary">Get a Free Quote</a>
+          <a href="tel:0439354563" class="btn btn-outline">0439 354 563</a>
+        </div>
+      </div>
+      <div class="location-panel">
+        <h3>Serving <span>Eltham</span> &amp; Diamond Valley</h3>
+        <p>We cover Eltham, Greensborough, Diamond Creek, Hurstbridge and the surrounding Diamond Valley region. Sloped block specialist.</p>
+        <div class="stat-row">
+          <div class="stat-item">
+            <strong>30<span>+</span></strong>
+            <small>Years Experience</small>
+          </div>
+          <div class="stat-item">
+            <strong>5<span>★</span></strong>
+            <small>Rated Local Business</small>
+          </div>
+        </div>
+        <div class="panel-cta">
+          <a href="index.html#contact" class="btn btn-primary">Request a Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YARRA VALLEY LOCATION SECTION -->
+  <section class="location-section" id="yarra-valley">
+    <div class="container location-inner">
+      <div class="location-copy">
+        <div>
+          <div class="section-tag">Outer East Melbourne</div>
+          <h2>Earthmoving<br><span>Yarra Valley</span></h2>
+        </div>
+        <p>From Lilydale to Healesville, D.D Mini Diggers delivers professional earthmoving and excavation services throughout the Yarra Valley. Whether it's a new driveway on an acreage property or a trench for services, we'll get the job done.</p>
+        <ul class="checklist">
+          <li>Acreage and rural earthmoving</li>
+          <li>Driveway excavation and prep</li>
+          <li>Trenching for water, power and comms</li>
+          <li>Landscaping preparation on large blocks</li>
+          <li>Spoil removal and material loading</li>
+        </ul>
+        <div class="location-cta">
+          <a href="index.html#contact" class="btn btn-primary">Get a Free Quote</a>
+          <a href="tel:0439354563" class="btn btn-outline">0439 354 563</a>
+        </div>
+      </div>
+      <div class="location-panel">
+        <h3>Serving the <span>Yarra Valley</span></h3>
+        <p>We cover Lilydale, Yarra Glen, Healesville, Coldstream, Chirnside Park and surrounds. Rural blocks and acreage welcome.</p>
+        <div class="stat-row">
+          <div class="stat-item">
+            <strong>30<span>+</span></strong>
+            <small>Years Experience</small>
+          </div>
+          <div class="stat-item">
+            <strong>5<span>★</span></strong>
+            <small>Rated Local Business</small>
+          </div>
+        </div>
+        <div class="panel-cta">
+          <a href="index.html#contact" class="btn btn-primary">Request a Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKENHAM LOCATION SECTION -->
+  <section class="location-section" id="pakenham">
+    <div class="container location-inner reverse">
+      <div class="location-copy">
+        <div>
+          <div class="section-tag">South-East Melbourne</div>
+          <h2>Mini Digger Hire<br><span>Pakenham</span></h2>
+        </div>
+        <p>D.D Mini Diggers services Pakenham, Berwick, Officer and the growing Cardinia region. Whether it's a brand new estate or an established property, we deliver fast, clean earthmoving with no hassle.</p>
+        <ul class="checklist">
+          <li>Post holes for new fencing and structures</li>
+          <li>Driveway excavation on new builds</li>
+          <li>Service and stormwater trenching</li>
+          <li>Landscaping earth preparation</li>
+          <li>Site clean up before or after builds</li>
+        </ul>
+        <div class="location-cta">
+          <a href="index.html#contact" class="btn btn-primary">Get a Free Quote</a>
+          <a href="tel:0439354563" class="btn btn-outline">0439 354 563</a>
+        </div>
+      </div>
+      <div class="location-panel">
+        <h3>Serving <span>Pakenham</span> &amp; Cardinia</h3>
+        <p>We cover Pakenham, Berwick, Officer, Beaconsfield and the broader Cardinia growth corridor. New estates and established properties.</p>
+        <div class="stat-row">
+          <div class="stat-item">
+            <strong>30<span>+</span></strong>
+            <small>Years Experience</small>
+          </div>
+          <div class="stat-item">
+            <strong>5<span>★</span></strong>
+            <small>Rated Local Business</small>
+          </div>
+        </div>
+        <div class="panel-cta">
+          <a href="index.html#contact" class="btn btn-primary">Request a Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Get the <span>Job Done?</span></h2>
+      <p>Fast quotes, reliable service and clean finishes — every time. Call or fill in the form and we'll be in touch quickly.</p>
+      <div class="cta-banner-actions">
+        <a href="index.html#contact" class="btn btn-primary">Get Your Free Quote</a>
+        <a href="tel:0439354563" class="btn btn-dark">0439 354 563</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">D.D <span>Mini</span> Diggers</div>
+      <div>© 2026 D.D Mini Diggers. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <a href="tel:0439354563" class="btn btn-primary float-call">Call Now</a>
+
+</body>
+</html>
