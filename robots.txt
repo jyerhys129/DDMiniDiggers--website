@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ddminidiggers.com.au/sitemap.xml
+Sitemap: https://www.ddminidiggers.com.au/sitemap.xml
