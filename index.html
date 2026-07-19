@@ -32,7 +32,7 @@
     "logo": "https://www.ddminidiggers.com.au/assets/logo.png",
     "telephone": "+61439354563",
     "url": "https://www.ddminidiggers.com.au",
-    "areaServed": ["Wantirna", "Eltham", "Eastern Suburbs", "Yarra Valley", "Pakenham", "Melbourne"],
+    "areaServed": ["Wantirna", "Eltham", "Yarra Valley", "Pakenham", "Ringwood", "Croydon", "Bayswater", "Boronia", "Greensborough", "Diamond Creek", "Lilydale", "Berwick", "Melbourne Eastern Suburbs"],
     "openingHours": "Mo-Sa 07:00-18:00",
     "description": "Professional earthmoving services across Melbourne's east. Specialising in tight access trenching, landscaping, post holes, driveways, retaining walls and spoil removal.",
     "priceRange": "$$",
@@ -40,7 +40,88 @@
       "@type": "PostalAddress",
       "addressRegion": "VIC",
       "addressCountry": "AU"
-    }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "3",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "makesOffer": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Trenching & Tight Access Excavation", "description": "Stormwater, electrical and service trenching in tight access residential areas."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Landscaping Earthworks", "description": "Ground preparation, reshaping and earthworks for landscaping projects."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Post Hole Digging", "description": "Precision post hole digging for fences, decks, pergolas and structural posts."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Driveway Excavation", "description": "Excavation and base preparation for new driveways and hardstand areas."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Retaining Wall Earthworks", "description": "Excavation and earthworks for retaining wall construction."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Spoil Removal & Site Clean Up", "description": "Load out, spoil removal and site clean up ready for the next stage."}}
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What earthmoving services does D.D Mini Diggers offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D.D Mini Diggers offers trenching and tight access excavation, landscaping earthworks, post hole digging, driveway excavation and base preparation, retaining wall earthworks, and spoil removal and site clean up across Melbourne's eastern suburbs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas in Melbourne does D.D Mini Diggers service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D.D Mini Diggers services Melbourne's eastern suburbs including Wantirna, Eltham, Yarra Valley, Pakenham, Ringwood, Croydon, Bayswater, Boronia, Greensborough, Diamond Creek, Lilydale, Berwick, Officer and surrounding areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can D.D Mini Diggers work in tight access areas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Tight access is our speciality. Our mini diggers can fit through narrow side gates, small backyards and confined spaces where standard excavators cannot reach — making us the go-to choice for residential earthmoving across Melbourne's east."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get a quote from D.D Mini Diggers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Call us on 0439 354 563 or fill in the free quote request form on our website. We provide fast, no-obligation quotes and respond within 24 hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is D.D Mini Diggers licensed and insured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. D.D Mini Diggers is fully licensed and insured, with over 30 years of earthmoving experience operating across Melbourne's eastern suburbs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What hours does D.D Mini Diggers operate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D.D Mini Diggers operates Monday to Saturday, 7:00am to 6:00pm."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does mini digger hire cost in Melbourne's east?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing depends on the scope of work, access conditions, soil type and location. Contact D.D Mini Diggers on 0439 354 563 for a free, no-obligation quote tailored to your specific project."
+        }
+      }
+    ]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1276,6 +1357,72 @@
       }
     }
 
+    .faq-section { background: var(--off-white); }
+
+    .faq-list {
+      margin-top: 52px;
+      max-width: 860px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child { border-bottom: 0; }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 24px 28px;
+      cursor: pointer;
+      text-align: left;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      font-family: 'Barlow', sans-serif;
+      transition: color .2s ease;
+    }
+
+    .faq-q:hover { color: var(--orange); }
+
+    .faq-icon {
+      font-size: 24px;
+      color: var(--orange);
+      flex-shrink: 0;
+      font-weight: 300;
+      line-height: 1;
+      transition: transform .25s ease;
+    }
+
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 28px;
+      transition: max-height .35s ease, padding .3s ease;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 400px;
+      padding: 0 28px 24px;
+    }
+
+    .faq-a p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
     @media (max-width: 520px) {
       .logo {
         font-size: 16px;
@@ -1379,7 +1526,7 @@
       </div>
 
       <div class="hero-art hero-image">
-        <img src="assets/logo.png" alt="D.D Mini Diggers logo">
+        <img src="assets/logo.png" alt="D.D Mini Diggers — earthmoving and mini digger hire, Melbourne East">
       </div>
     </div>
   </section>
@@ -1455,37 +1602,52 @@
       <p class="section-sub">Trusted by homeowners and builders across Wantirna, Eltham, Eastern Suburbs, Yarra Valley, Pakenham and surrounding areas.</p>
 
       <div class="review-grid">
-        <article class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>Fantastic work. D.D Mini Diggers got the job done quickly and left everything spotless. Highly recommend for any excavation work.</p>
-          <div class="review-author">
+        <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+          <meta itemprop="itemReviewed" content="D.D Mini Diggers">
+          <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+            ★★★★★
+          </div>
+          <p itemprop="reviewBody">Fantastic work. D.D Mini Diggers got the job done quickly and left everything spotless. Highly recommend for any excavation work.</p>
+          <div class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
             <div class="avatar">JM</div>
             <div>
-              <strong class="testimonial-name">James M.</strong>
+              <strong class="testimonial-name" itemprop="name">James M.</strong>
               <span>Wantirna</span>
             </div>
           </div>
         </article>
 
-        <article class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>We had a very tight access job and they were the only ones willing to take it on. Professional, efficient and well priced.</p>
-          <div class="review-author">
+        <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+          <meta itemprop="itemReviewed" content="D.D Mini Diggers">
+          <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+            ★★★★★
+          </div>
+          <p itemprop="reviewBody">We had a very tight access job and they were the only ones willing to take it on. Professional, efficient and well priced.</p>
+          <div class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
             <div class="avatar">SR</div>
             <div>
-              <strong class="testimonial-name">Sarah R.</strong>
+              <strong class="testimonial-name" itemprop="name">Sarah R.</strong>
               <span>Eltham</span>
             </div>
           </div>
         </article>
 
-        <article class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>Used them for retaining wall prep and a driveway. Turned up on time and delivered exactly what we needed. Top blokes.</p>
-          <div class="review-author">
+        <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+          <meta itemprop="itemReviewed" content="D.D Mini Diggers">
+          <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+            ★★★★★
+          </div>
+          <p itemprop="reviewBody">Used them for retaining wall prep and a driveway. Turned up on time and delivered exactly what we needed. Top blokes.</p>
+          <div class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
             <div class="avatar">TK</div>
             <div>
-              <strong class="testimonial-name">Tom K.</strong>
+              <strong class="testimonial-name" itemprop="name">Tom K.</strong>
               <span>Pakenham</span>
             </div>
           </div>
@@ -1502,39 +1664,39 @@
 
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="assets/job-1.png" alt="Landscaping preparation with mini loader">
+          <img src="assets/job-1.png" alt="Landscaping earthworks preparation by D.D Mini Diggers, Melbourne East" loading="lazy">
           <span>Landscaping Preparation</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/job-2.png" alt="Landscaping in progress with curved path and garden edging">
+          <img src="assets/job-2.png" alt="Landscaping earthworks in progress with curved path and garden edging" loading="lazy">
           <span>Landscaping Preparation</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/job-3.png" alt="Completed lawn installation and garden beds">
+          <img src="assets/job-3.png" alt="Completed lawn installation and garden beds by D.D Mini Diggers" loading="lazy">
           <span>Lawn & Garden Installation</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/job-4.png" alt="Professional soil leveling and site preparation">
-          <span>Site Leveling</span>
+          <img src="assets/job-4.png" alt="Professional soil levelling and site preparation, Eastern Suburbs Melbourne" loading="lazy">
+          <span>Site Levelling</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/job-5.png" alt="Backyard earthmoving and soil preparation">
+          <img src="assets/job-5.png" alt="Backyard earthmoving and soil preparation by D.D Mini Diggers" loading="lazy">
           <span>Backyard Earthmoving</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/job-6.png" alt="Tiered retaining wall installation with concrete sleepers">
+          <img src="assets/job-6.png" alt="Tiered retaining wall excavation with concrete sleepers, Melbourne" loading="lazy">
           <span>Retaining Wall Installation</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/job-7.png" alt="Completed backyard landscaping with lawn and patio">
+          <img src="assets/job-7.png" alt="Completed backyard landscaping with lawn and patio, Eastern Suburbs" loading="lazy">
           <span>Backyard Landscaping</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/job-8.png" alt="Backyard transformation with lawn path and garden beds in Eastern Suburbs">
+          <img src="assets/job-8.png" alt="Backyard transformation with lawn, path and garden beds, Melbourne East" loading="lazy">
           <span>Backyard Transformation</span>
         </div>
         <div class="gallery-item">
-          <img src="assets/job-9.png" alt="Complete backyard renovation with turf, edging and mulch">
+          <img src="assets/job-9.png" alt="Complete backyard renovation with turf, edging and mulch by D.D Mini Diggers" loading="lazy">
           <span>Backyard Renovation</span>
         </div>
       </div>
@@ -1549,6 +1711,88 @@
         <div>✔ Tight access specialists</div>
         <div>✔ Reliable & on time</div>
         <div>✔ Local Melbourne operator</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-tag">Common Questions</div>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+      <p class="section-sub">Everything you need to know about our earthmoving services across Melbourne's east.</p>
+
+      <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-q">
+            <span itemprop="name">What earthmoving services does D.D Mini Diggers offer?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">D.D Mini Diggers offers trenching and tight access excavation, landscaping earthworks, post hole digging, driveway excavation and base preparation, retaining wall earthworks, and spoil removal and site clean up across Melbourne's eastern suburbs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-q">
+            <span itemprop="name">What areas in Melbourne does D.D Mini Diggers service?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">We service Melbourne's eastern suburbs including Wantirna, Eltham, Yarra Valley, Pakenham, Ringwood, Croydon, Bayswater, Boronia, Greensborough, Diamond Creek, Lilydale, Berwick, Officer and all surrounding areas. Not sure if we cover your suburb? Call us on 0439 354 563.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-q">
+            <span itemprop="name">Can you work in tight access areas?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes — tight access is our speciality. Our mini diggers can fit through narrow side gates, small backyards and confined spaces where standard excavators cannot reach. We're the go-to choice for residential earthmoving across Melbourne's east.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-q">
+            <span itemprop="name">How do I get a quote?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Call us on 0439 354 563 or fill in the free quote request form on this page. We provide fast, no-obligation quotes and respond within 24 hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-q">
+            <span itemprop="name">Is D.D Mini Diggers licensed and insured?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes. D.D Mini Diggers is fully licensed and insured, with over 30 years of earthmoving experience operating across Melbourne's eastern suburbs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-q">
+            <span itemprop="name">What hours do you operate?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">We operate Monday to Saturday, 7:00am to 6:00pm. Call 0439 354 563 to check availability for your job.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-q">
+            <span itemprop="name">How much does mini digger hire cost in Melbourne?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Pricing depends on the scope of work, access conditions, soil type and location. Call us on 0439 354 563 for a free, no-obligation quote tailored to your specific project.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1644,6 +1888,15 @@
   <a href="tel:0439354563" class="btn btn-primary float-call">Call Now</a>
 
   <script>
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
     document.getElementById('quote-form').addEventListener('submit', function(e) {
       e.preventDefault();
       var inputs = this.querySelectorAll('input[type="text"]');
